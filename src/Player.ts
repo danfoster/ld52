@@ -8,12 +8,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene: GameScene, x: number, y: number) {
         const texture = "player";
 
-        super(
-            scene,
-            x * tileSize + tileSize / 2,
-            y * tileSize + tileSize / 2,
-            texture
-        );
+        super(scene, x * tileSize, y * tileSize, texture);
 
         this.scene.add.existing(this);
         this.scene.physics.world.enable(this);
