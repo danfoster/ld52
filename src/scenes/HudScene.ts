@@ -13,8 +13,6 @@ export default class HudScene extends Phaser.Scene {
         this.fps.setTint(0xffffff, 0xffffff, 0xffffff, 0xffffff);
         let b = this.add.rectangle(0, 0, 100, 32, 0x000000, 0.5);
         b.setOrigin(0, 0);
-        // b.originX = 1;
-        // b.originY = 1;
         let debug = this.add.container(540, 0, [b, this.fps]);
     }
 
